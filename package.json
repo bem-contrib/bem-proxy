@@ -31,6 +31,7 @@
     "jshint": "~2.2.0",
     "grunt": "~0.4.2",
     "grunt-mocha": "~0.4.7",
-    "grunt-contrib-jshint": "~0.7.2"
+    "grunt-contrib-jshint": "~0.7.2",
+    "grunt-jscs-checker": "~0.2.6"
   }
 }

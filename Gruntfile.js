@@ -12,12 +12,17 @@ module.exports = function(grunt) {
       test: {
         src: ['test/**/*.js']
       }
+    },
+
+    jscs: {
+      main: [ "*.js" ]
     }
   });
 
   // Load local tasks.
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-mocha');
+  grunt.loadNpmTasks("grunt-jscs-checker");
 
   // Default task.
   grunt.registerTask('default', function() {
@@ -25,5 +30,5 @@ module.exports = function(grunt) {
   });
 
   // Run tests
-  grunt.registerTask('test', ['jshint', 'mocha']);
+  grunt.registerTask('test', ['jscs', 'jshint', 'mocha']);
 };
