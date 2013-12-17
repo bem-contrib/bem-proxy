@@ -1,21 +1,21 @@
 /*global module:false*/
-module.exports = function(grunt) {
+module.exports = function (grunt) {
 
   // Project configuration.
   grunt.initConfig({
 
-    jshint: {
-      src: ['Gruntfile.js', 'lib/**/*.js', 'test/**/*.js']
+    jshint : {
+      src : ['Gruntfile.js', 'lib/**/*.js', 'test/**/*.js']
     },
 
-    mocha: {
-      test: {
-        src: ['test/**/*.js']
+    mocha : {
+      test : {
+        src : ['test/**/*.js']
       }
     },
 
-    jscs: {
-      main: [ "*.js" ]
+    jscs : {
+      main : [ "*.js" ]
     }
   });
 
@@ -25,7 +25,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks("grunt-jscs-checker");
 
   // Default task.
-  grunt.registerTask('default', function() {
+  grunt.registerTask('default', function () {
     grunt.log.writeln('not ready');
   });
 

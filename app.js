@@ -1,7 +1,7 @@
 
-var http = require('http')
-  , bemRender = require('lib/bem-render-middleware')
-  , httpProxy = require('http-proxy');
+var http = require('http'),
+  bemRender = require('lib/bem-render-middleware'),
+  httpProxy = require('http-proxy');
 
 httpProxy.createServer(
     bemRender.pages('pages'),
