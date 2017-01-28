@@ -2,9 +2,11 @@
   "name": "bem-proxy",
   "version": "0.0.1",
   "description": "Pure proxy server to render bemjson with bemhtml onto plain html and so on",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "grunt test"
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -23,15 +25,12 @@
     "url": "https://github.com/zxqfox/bem-proxy/issues"
   },
   "dependencies": {
-    "bem": "~0.6.16",
-    "http-proxy": "~0.10.3"
+    "http-proxy": "^1.16.2",
+    "http-proxy-mitm": "^0.1.2"
   },
   "devDependencies": {
-    "mocha": "~1.13.0",
-    "jshint": "~2.2.0",
-    "grunt": "~0.4.2",
-    "grunt-mocha": "~0.4.7",
-    "grunt-contrib-jshint": "~0.7.2",
-    "grunt-jscs-checker": "~0.2.6"
+    "eslint": "^3.14.1",
+    "eslint-config-pedant": "^0.8.0",
+    "mocha": "^3.2.0"
   }
 }
